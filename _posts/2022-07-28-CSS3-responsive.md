@@ -13,13 +13,13 @@ toc: true
 **[공지사항]** 잘못된 정보나 오타에 피드백 주시면 감사하겠습니다.:)
 {: .notice--info}
 
-# :mag_right: 개요
+# 🔎 개요
 
-사용자들을 같은 웹 컨텐츠를 이용 하더라도 PC와 모바일 기기에서 동등한 서비스를 제공 받기를 원한다. 이에 대한 대응 방안인 반응형 웹에 대해 알아보고자 한다.
+사용자들을 같은 웹 콘텐츠를 이용하더라도 PC와 모바일 기기에서 동등한 서비스를 받기를 원한다. 이에 대한 대응 방안인 반응형 웹에 대해 알아보고자 한다.
 
 # Responsive Web
 
-디바이스 종류에 따라 웹페이지의 크기가 자동적으로 재조정 되는 것을 말한다.
+디바이스 종류에 따라 웹페이지의 크기가 자동으로 재조정 되는 것을 말한다.
 
 ## Media Query
 
@@ -30,7 +30,7 @@ toc: true
 ![미디어 쿼리 문법](https://www.nextree.co.kr/content/images/2021/01/jsseo-140329-CSS-02-1024x167.png)
 
 1. `only | not`  
-   only키워드는 뒤의 조건일 경우만, not키워드는 뒤의 조건을 제외한 조건
+   only 키워드는 뒤의 조건일 경우만, not 키워드는 뒤의 조건을 제외한 조건
 
 2. 미디어 타입의 종류
 
@@ -58,15 +58,15 @@ toc: true
     프로젝터
 
    `tty`  
-    디스플레이 능력이 한정된 텔렉스, 터미널, 또는 수동 이동 장치 등 고정 된 글자를 사용하는 미디어
+    디스플레이 능력이 한정된 텔렉스, 터미널, 또는 수동 이동 장치 등 고정된 글자를 사용하는 미디어
 
    `tv`  
     음성과 영상이 동시 출력되는 장치
 
-   `embrossed`  
+   `embossed`  
     페이지에 인쇄된 점자 표지 장치
 
-3. 속성과 속성 값  
+3. 속성과 속성값  
    `width`  
    웹 페이지의 가로 길이
 
@@ -80,7 +80,7 @@ toc: true
    기기의 실제 세로 길이
 
    `orientation`  
-   width와 height을 구하여 width값이 길면 landscape로, height 값이 길면 portrait로 판단
+   width와 height를 구하여 width 값이 길면 landscape로, height 값이 길면 portrait로 판단
 
    `aspect-ratio`  
    width/height 비율을 판단
@@ -91,7 +91,7 @@ toc: true
    `color-index`  
    단말기에서 사용하는 최대 색상 수를 판단
 
-   `monochrom`  
+   `monochrome`  
    흑백 컬러만을 사용하는 단말기에서 흰색과 검은색 사이의 단계를 판단
 
    `resolution`  
@@ -114,7 +114,7 @@ toc: true
   ```
 
 - `<style>`  
-  `<head>` 태그 안에 위치하여 media 속성 안 조건에 만족할 때 스타일을 적용 시킨다.
+  `<head>` 태그 안에 위치하여 media 속성 안 조건에 만족할 때 스타일을 적용한다.
 
   ```html
   <style type="text/css" media="screen and (min-width: 512px)">
@@ -123,7 +123,7 @@ toc: true
   ```
 
 - `<style>-@import`  
-  `@import`를 사용하여 뒷 부분의 미디어 쿼리를 만족할 때 해당 CSS 파일을 불러온다.
+  `@import`를 사용하여 뒷부분의 미디어 쿼리를 만족할 때 해당 CSS 파일을 불러온다.
 
   ```html
   <style>
@@ -132,15 +132,15 @@ toc: true
   </style>
   ```
 
-- CSS파일  
-  불러온 CSS 파일 안 혹은 `<style>` 태그 안에서 직접 미디어 쿼리를 작성하여 만족할 때 해당 스타일을 적용 시킨다.
+- CSS 파일  
+  불러온 CSS 파일 안 혹은 `<style>` 태그 안에서 직접 미디어 쿼리를 작성하여 만족할 때 해당 스타일을 적용 한다.
   ```css
   @media screen and (min-width: 768px);
   ```
 
 ### 주의할 점
 
-가로폭 조정을 위해서 HTML 문서의 `<head>` 태그 사이에 다음의 코드를 넣어야 한다.
+가로 폭 조정을 위해서 HTML 문서의 `<head>` 태그 사이에 다음의 코드를 넣어야 한다.
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -148,7 +148,9 @@ toc: true
 
 # 💭 느낀 점
 
-추가적인 배치들은 출처에 있는 사이트에 잘 설명되어 있다.
+반응형 웹을 Bootstrap과 tailwind를 사용해서 구현해왔었다. 왜 지금까지 사용한 프레임워크가 반응형 웹을 구현하는 데 도움을 주는지 아는 계기가 되었다.
+
+P.S. 추가적인 배치들은 출처에 있는 사이트에 잘 설명되어 있다.
 
 ---
 
