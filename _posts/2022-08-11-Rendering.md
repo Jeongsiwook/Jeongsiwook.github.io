@@ -23,10 +23,6 @@ React를 사용하면서 접하게 되었던 개념들을 제대로 정리해보
 
 하나의 페이지로 구성된 애플리케이션을 말한다. 렌더링 방식으로 클라이언트 사이드 렌더링을 채택한다.
 
-# MPA(Multi-page Application)
-
-두 개 이상의 페이지로 구성된 애플리케이션을 의미한다. 사용자의 클릭과 같이 인터렉션이 발생할 때마다 해당 링크로 이동하여 앱이 다시 새로고침 되는 전통적인 방식으로 작동한다. 렌더링 방식으로 SSR을 채택한다.
-
 ## CSR (Client Side Rendering)
 
 ![CSR](https://images.velog.io/images/cheal3/post/d06f66eb-aab7-4440-8cb6-c92e6d36c1db/image.png)
@@ -48,6 +44,10 @@ React를 사용하면서 접하게 되었던 개념들을 제대로 정리해보
 
 - 느린 초기 로딩 속도  
   초기에 모든 JS 파일을 다운 받아와야 하기 때문
+
+# MPA(Multi-page Application)
+
+두 개 이상의 페이지로 구성된 애플리케이션을 의미한다. 사용자의 클릭과 같이 인터렉션이 발생할 때마다 해당 링크로 이동하여 앱이 다시 새로고침 되는 전통적인 방식으로 작동한다. 렌더링 방식으로 SSR을 채택한다.
 
 ## SSR (Server Side Rendering)
 
